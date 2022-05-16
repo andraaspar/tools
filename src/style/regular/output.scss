@@ -1,0 +1,9 @@
+.output {
+	background: var(--darkblue);
+	border-color: var(--blue);
+
+	&:focus-visible {
+		background: var(--blue);
+		border-color: var(--lightblue);
+	}
+}

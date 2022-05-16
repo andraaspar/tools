@@ -1,0 +1,12 @@
+.col {
+	flex-flow: column;
+
+	& > .x-stretch {
+		align-self: stretch;
+	}
+
+	& > .y-stretch {
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+}

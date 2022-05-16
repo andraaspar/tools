@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: var(--white);
+	background: var(--black);
+	font-family: system-ui, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+body {
+	margin: 0;
+	overscroll-behavior: contain;
+}
+
+input {
+	vertical-align: top;
+	margin: 0;
+	border: 1px solid var(--red);
+	background: var(--purple);
+	color: var(--white);
+	padding: 5px;
+	border-radius: 6px;
+	min-width: 0;
+	transition: 0.5s;
+	font-family: monospace;
+	line-height: 1;
+
+	&::placeholder {
+		color: var(--orange);
+		font-style: italic;
+	}
+
+	&:focus-visible {
+		outline: none;
+		border-color: var(--orange);
+		background: var(--red);
+	}
+}
+
+button {
+	display: inline-block;
+	border: 1px solid var(--lightgreen);
+	background: var(--green);
+	color: var(--white);
+	padding: 5px;
+	border-radius: 6px;
+	transition: 0.5s;
+	font-size: 14px;
+	line-height: 1;
+	touch-action: manipulation;
+
+	&:hover {
+		background: var(--lightgreen);
+		transition: 0s;
+	}
+
+	&:active {
+		border-color: var(--green);
+		background: var(--darkgreen);
+		transition: 0s;
+	}
+}
+
+dialog {
+	color: var(--white);
+	background: var(--darkblue);
+	border: 1px solid var(--lightblue);
+	border-radius: 6px;
+
+	&::backdrop {
+		background: rgba(26, 28, 44, 0.6);
+	}
+}
+
+label {
+	display: inline-block;
+	padding: 6px 0;
+	line-height: 1;
+	touch-action: manipulation;
+}

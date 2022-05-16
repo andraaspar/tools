@@ -1,0 +1,24 @@
+{
+	"dependencies": {
+		"@parcel/service-worker": "^2.5.0",
+		"gh-pages": "^4.0.0",
+		"mathjs": "^10.5.1",
+		"matul": "^0.0.7",
+		"parcel": "^2.5.0",
+		"rimraf": "^3.0.2"
+	},
+	"source": "src/index.html",
+	"scripts": {
+		"start": "rimraf public && parcel -p 8080 --dist-dir public",
+		"build": "rimraf public && parcel build --public-url \".\" --dist-dir public --no-source-maps",
+		"deploy": "gh-pages -d public"
+	},
+	"devDependencies": {
+		"@parcel/packager-raw-url": "2.5.0",
+		"@parcel/transformer-sass": "2.5.0",
+		"@parcel/transformer-typescript-tsc": "^2.5.0",
+		"@parcel/transformer-webmanifest": "2.5.0",
+		"@parcel/validator-typescript": "^2.5.0",
+		"typescript": ">=3.0.0"
+	}
+}

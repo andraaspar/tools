@@ -10,8 +10,6 @@
 	],
 	"background_color": "#000000",
 	"display": "standalone",
-	"scope": "/",
 	"theme_color": "#000000",
-	"description": "Tools",
-	"start_url": "/"
+	"start_url": "."
 }

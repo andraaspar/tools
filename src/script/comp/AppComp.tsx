@@ -47,7 +47,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 						v.state.mathInputRef = r
 					}}
 					class='x-stretch large-input'
-					placeholder='Type here to calculate...'
+					placeholder='Type here...'
 					autofocus
 					value={v.state.mathInput}
 					oninput={function (this: HTMLInputElement) {
@@ -302,6 +302,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 						</button>
 					</div>
 				))}
+				<div class='remark'>2022/5/17 17:45</div>
 			</div>
 			<dialog
 				ref={(r: IDialog) => {

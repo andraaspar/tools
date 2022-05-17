@@ -123,6 +123,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 						onclick={async () => {
 							if (v.state.mathOutputRef) {
 								v.state.mathInput = v.state.mathOutputRef.value
+								v.state.mathInputRef?.focus()
 								await render()
 								if (v.state.mathInputRef) {
 									v.state.mathInputRef.focus()
@@ -140,6 +141,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 						class='mono'
 						onclick={async () => {
 							v.state.mathInput = ''
+							v.state.mathInputRef?.focus()
 							await render()
 							if (v.state.mathInputRef) {
 								v.state.mathInputRef.focus()
@@ -207,6 +209,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 										v.state.mathInput = '(' + v.state.mathInput
 										cursor++
 									}
+									v.state.mathInputRef?.focus()
 									await render()
 									if (v.state.mathInputRef) {
 										v.state.mathInputRef.focus()

@@ -49,6 +49,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 					class='x-stretch large-input'
 					placeholder='Type here...'
 					autofocus
+					autocapitalize='off'
 					value={v.state.mathInput}
 					oninput={function (this: HTMLInputElement) {
 						v.state.mathInput = this.value

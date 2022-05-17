@@ -13,15 +13,17 @@ self.addEventListener('activate', (event) => {
 	})
 })
 self.addEventListener('fetch', (event) => {
-	;(event as FetchEvent).respondWith(
+	const e = event as FetchEvent
+	e.respondWith(
 		(async () => {
-			const responseFromCache = await caches.match(
-				(event as FetchEvent).request,
-			)
+			const responseFromCache = await caches.match(e.request)
 			if (responseFromCache) {
+				console.log(`[rc1cz1] [CACHE] ${e.request.url}`)
 				return responseFromCache
+			} else {
+				console.log(`[rc1d3c] [FETCH] ${e.request.url}`)
+				return fetch(e.request)
 			}
-			return fetch((event as FetchEvent).request)
 		})(),
 	)
 })

@@ -7,11 +7,12 @@ render()
 
 window.addEventListener('load', async () => {
 	try {
-		await navigator.serviceWorker.register(
+		const reg = await navigator.serviceWorker.register(
 			new URL('../service-worker.ts', import.meta.url),
-			{ type: 'module' },
+			{ type: 'module', updateViaCache: 'none' },
 		)
 		console.log(`[rbzbv7] Service worker registered.`)
+		reg.update()
 	} catch (e) {
 		console.error(`[rbzbux]`, e)
 	}

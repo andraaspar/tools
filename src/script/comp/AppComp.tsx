@@ -92,7 +92,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 						}
 					}}
 					style={`font-size: min(10vmin, 36px, ${
-						((window.innerWidth - 12) / v.state.mathInput.length) * 1.7
+						((window.innerWidth - 12) / v.state.mathInput.length) * 1.5
 					}px)`}
 				/>
 				<div class='flex row x-stretch'>

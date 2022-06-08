@@ -21,10 +21,10 @@ input {
 	border: 1px solid var(--red);
 	background: var(--purple);
 	color: var(--white);
-	padding: 5px;
+	padding: 10px;
 	border-radius: 6px;
 	min-width: 0;
-	transition: 0.5s;
+	transition: background-color 0.5s;
 	font-family: monospace;
 	line-height: 1;
 
@@ -45,7 +45,7 @@ button {
 	border: 1px solid var(--lightgreen);
 	background: var(--green);
 	color: var(--white);
-	padding: 5px;
+	padding: 10px;
 	border-radius: 6px;
 	transition: 0.5s;
 	font-size: 14px;

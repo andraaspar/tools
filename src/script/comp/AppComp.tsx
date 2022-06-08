@@ -91,6 +91,9 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 								break
 						}
 					}}
+					style={`font-size: min(10vmin, 36px, ${
+						((window.innerWidth - 12) / v.state.mathInput.length) * 1.7
+					}px)`}
 				/>
 				<div class='flex row x-stretch'>
 					<input
@@ -303,7 +306,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 						</button>
 					</div>
 				))}
-				<div class='remark'>2022/5/20 14:02</div>
+				<div class='remark'>2022/6/8 18:42</div>
 			</div>
 			<dialog
 				ref={(r: IDialog) => {

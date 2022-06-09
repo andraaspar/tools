@@ -306,7 +306,7 @@ export const AppComp: TRenderJSX<AppCompProps, AppCompState> = (_, v) => {
 						</button>
 					</div>
 				))}
-				<div class='remark'>2022/6/8 18:42</div>
+				<div class='remark'>2022/6/9 11:26</div>
 			</div>
 			<dialog
 				ref={(r: IDialog) => {
